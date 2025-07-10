@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amuthanilavan | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #081b29, #0f3559);
+      color: #ededed !important;
+    }
+    header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 10%;
+  background-color: #0a1f38;
+  position: relative;
+  z-index: 100;
+}
+    header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00abf0, #ff00cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+    nav ul li {
+  margin: 10px;
+  list-style: none;
+}
+    nav ul li a {
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-shadow: 0 0 5px #00abf0, 0 0 15px #ff00cc;
+  animation: glowPulseName 2s infinite alternate;
+}
+    nav ul li a:hover {
+      color: #00abf0;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 10%;
+      animation: fadeIn 1.5s ease-in;
+      background: linear-gradient(135deg, #081b29, #0f3559);
+    }
+    .hero-text {
+      flex: 1 1 300px;
+      max-width: 600px;
+    }
+    .hero-text h1,
+    .hero-text h2,
+    .hero-text p {
+      color: #ededed !important;
+    }
+    .hero-img {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    .hero-img img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #00abf0;
+      box-shadow: 0 0 30px #00abf0, 0 0 60px #ff00cc;
+      background-color: #081b29;
+    }
+    .socials {
+      margin-top: 20px;
+    }
+    .socials a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #00abf0;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    .hire-button {
+  display: inline-block;
+  margin-top: 25px;
+  background: linear-gradient(135deg, #00abf0, #ff00cc);
+  color: #081b29;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 15px #00abf0, 0 0 30px #ff00cc;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+    .hire-button:hover {
+      background-color: #008ecc;
+    }
+    section {
+      padding: 60px 5%;
+      background: linear-gradient(135deg, #0f3559, #081b29);
+      margin-top: 20px;
+      box-shadow: 0 0 25px #00abf0, 0 0 45px #ff00cc;
+      border-radius: 12px;
+    }
+    section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #00abf0, 0 0 15px #ff00cc;
+  animation: glowPulseName 2s infinite alternate;
+}
+  text-shadow: 0 0 5px #00abf0, 0 0 15px #ff00cc;
+  animation: glowPulseName 2s infinite alternate;
+}
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0a1f38;
+      color: #ccc;
+      margin-top: 60px;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-img img {
+        margin: 0 auto;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 1.5rem;
+      }
+      .hero-text h2 {
+        font-size: 1.2rem;
+      }
+      .hero-text p {
+        font-size: 0.95rem;
+      }
+      .hire-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+      .hero-img img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+    #typing {
+    color: #00ffea;
+    text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea, 0 0 20px #00ffea;
+    animation: glowPulse 2s infinite alternate;
+  }
+
+  @keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea, 0 0 20px #00ffea;
+  }
+  100% {
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00ffff;
+  }
+}
+
+@keyframes glowPulseName {
+  0% {
+    text-shadow: 0 0 5px #00abf0, 0 0 15px #ff00cc;
+  }
+  100% {
+    text-shadow: 0 0 10px #00abf0, 0 0 25px #ff00cc;
+  }
+}
+    100% { text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00ffff; }
+  }
+  .glow-name {
+  font-weight: bold;
+  background: linear-gradient(90deg, #00abf0, #ff00cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px #00abf0, 0 0 15px #ff00cc, 0 0 30px #ff00cc;
+  animation: glowPulseName 2s infinite alternate;
+}
+  .typing-role {
+  font-weight: bold;
+  color: #00ffea;
+  text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea;
+  animation: glowPulse 2s infinite alternate;
+}
+  
+  .glow-skill {
+    color: #00ffea;
+    text-shadow: 0 0 5px #00abf0, 0 0 10px #ff00cc;
+    animation: glowPulseName 2s infinite alternate;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+html {
+  scroll-behavior: smooth;
+}
+.glow-link {
+  font-weight: 600;
+  background: linear-gradient(90deg, #00abf0, #ff00cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px #00abf0, 0 0 10px #ff00cc;
+  animation: glowPulseName 2s infinite alternate;
+}
+</style>
+</head>
+<body>
+  <header>
+  <h1>Empowering Decisions Through Data | <span class="glow-name">Amuthan</span></h1>
+  <nav>
+    <ul>
+      <li><a href="#" class="glow-link">Home</a></li>
+      <li><a href="#skills" class="glow-link">Skills</a></li>
+      <li><a href="#projects" class="glow-link">Projects</a></li>
+      <li><a href="#contact" class="glow-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, It's Me <strong class="glow-name">Amuthanilavan</strong></h1>
+      <h2>And I'm a <span id="typing" style="color:#00ffea;"></span></h2>
+      <p>I’m a Data Analyst with experience using Python, SQL, and BI tools. I love analyzing trends and creating powerful visual insights.</p>
+      <div class="socials">
+        <a href="#">🔗</a>
+        <a href="#">💬</a>
+        <a href="#">📷</a>
+      </div>
+      <a class="hire-button" href="#contact">Hire Me</a>
+    </div>
+    <div class="hero-img">
+     <img src="D:\my details\WhatsApp Image 2025-07-10 at 20.43.02_aa1fef7c.jpg" alt="Amuthan Avatar" />
+
+    </div>
+  </section>
+
+  <section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li><strong>Python</strong> – for scripting and data analysis</li>
+    <li><strong>Pandas</strong> – for data manipulation and preprocessing</li>
+    <li><strong>NumPy</strong> – for numerical computations</li>
+    <li><strong>Seaborn</strong> – for statistical data visualization</li>
+    <li><strong>SQL</strong> – for querying and managing relational databases</li>
+    <li><strong>Power BI</strong> – to build interactive dashboards</li>
+    <li><strong>Excel</strong> – for spreadsheet analysis and functions</li>
+    <li><strong>Google Sheets</strong> – for collaborative data tracking</li>
+  </ul>
+</section>
+  </section>
+
+  <section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>COVID-19 Data Analysis:</strong> Analyzed global COVID-19 data using Python and Pandas. Extracted trends, built time-series plots, and shared insights via visualizations.</li>
+    <li><strong>Interactive Dashboard Using Power BI:</strong> Designed and developed an interactive dashboard for a sales dataset. Included dynamic filters, KPIs, and data-driven story-telling.</li>
+    <li><strong>Pandas Data Exploration Scripts:</strong> Wrote reusable Python scripts using Pandas to perform data wrangling, missing value handling, and basic EDA on various CSV datasets.</li>
+    <li><strong>Employee Performance Report (SQL):</strong> Built complex queries to assess employee performance based on metrics such as attendance, projects handled, and review scores.</li>
+  </ul>
+  </section>
+
+  <section id="certifications-internships">
+    <h2>Certifications and Internships</h2>
+    <ul>
+      <li><strong>Google Data Analytics Professional Certificate:</strong> Completed end-to-end data analysis projects using spreadsheets, SQL.</li>
+      <li><strong>Power BI Masterclass (Udemy):</strong> Built multiple dashboards and learned DAX functions for advanced reporting.</li>
+      <li><strong>Data Analytics Internship – pan tech:</strong> Worked on real-world datasets to generate insights and automate reporting using Python and Excel.</li>
+      
+    </ul>
+  </section>
+
+  <footer>
+  <p style="text-align: center;">&copy; 2025 <span class="glow-name">Amuthanilavan</span>. All rights reserved.</p>
+</footer>
+
+  <script>
+    const typingText = [
+  '<span class="typing-role role-1">Data Analyst</span>',
+  '<span class="typing-role role-2">Python Developer</span>',
+  '<span class="typing-role role-3">Power BI Enthusiast</span>',
+  '<span class="typing-role role-4">SQL Developer</span>'
+];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
+
+    (function type() {
+      if (count === typingText.length) count = 0;
+      currentText = typingText[count];
+      letter = currentText.slice(0, ++index);
+      document.getElementById("typing").innerHTML = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 1500);
+      } else {
+        setTimeout(type, 120);
+      }
+    })();
+  </script>
+</body>
+</html>
