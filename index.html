@@ -240,6 +240,15 @@ html {
   text-shadow: 0 0 5px #00abf0, 0 0 10px #ff00cc;
   animation: glowPulseName 2s infinite alternate;
 }
+.contact-details {
+  margin-top: 25px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ededed;
+}
+.contact-details p strong {
+  color: #00abf0;
+}
 </style>
 </head>
 <body>
@@ -256,22 +265,16 @@ html {
 </header>
 
   <section class="hero">
-    <div class="hero-text">
-      <h1>Hello, It's Me <strong class="glow-name">Amuthanilavan</strong></h1>
-      <h2>And I'm a <span id="typing" style="color:#00ffea;"></span></h2>
-      <p>I’m a Data Analyst with experience using Python, SQL, and BI tools. I love analyzing trends and creating powerful visual insights.</p>
-      <div class="socials">
-        <a href="#">🔗</a>
-        <a href="#">💬</a>
-        <a href="#">📷</a>
-      </div>
-      <a class="hire-button" href="#contact">Hire Me</a>
-    </div>
-    <div class="hero-img">
-     <img src="images/WhatsApp Image 2025-07-10 at 20.43.02_aa1fef7c.jpg" alt="Amuthan Avatar" />
-
-    </div>
-  </section>
+  <div class="hero-text">
+    <h1>Hello, It's Me <strong class="glow-name">Amuthanilavan</strong></h1>
+    <h2>And I'm a <span id="typing"></span></h2>
+    <p>I’m a passionate Data Analyst with experience in Python, SQL, Power BI, and Excel, focused on turning data into actionable insights.</p>
+    <a class="hire-button" href="#contact">Hire Me</a>
+  </div>
+  <div class="hero-img">
+    <img src="D:\my details\WhatsApp Image 2025-07-10 at 20.43.02_aa1fef7c.jpg" alt="Amuthan Avatar" />
+  </div>
+</section>
 
   <section id="skills">
   <h2>Skills</h2>
@@ -288,6 +291,15 @@ html {
 </section>
   </section>
 
+  <section id="education">
+  <h2>Education Qualification</h2>
+  <ul>
+    <li><strong>B.Tech Artificial Intelligence and Data Science</strong> – Karpagam Academy of Higher Education, 2021–2025 (CGPA: 7.73)</li>
+    <li><strong>Higher Secondary Certificate (HSC)</strong> – Vivekananda Matriculation Higher Secondary School, 2020–2021 (Percentage: 76.5%)</li>
+    <li><strong>Secondary School Leaving Certificate (SSLC)</strong> – Sri Gurugnana Sambandar Mission Sri Muthai Matric Higher Secondary School, 2018–2019 (Percentage: 69.5%)</li>
+  </ul>
+  </section>
+
   <section id="projects">
   <h2>Projects</h2>
   <ul>
@@ -296,7 +308,34 @@ html {
     <li><strong>Pandas Data Exploration Scripts:</strong> Wrote reusable Python scripts using Pandas to perform data wrangling, missing value handling, and basic EDA on various CSV datasets.</li>
     <li><strong>Employee Performance Report (SQL):</strong> Built complex queries to assess employee performance based on metrics such as attendance, projects handled, and review scores.</li>
   </ul>
-  </section>
+  <div style="text-align: center; margin-top: 20px;">
+    <button onclick="showProjectImage()" class="hire-button">View Project Demo</button>
+    <div id="project-image-box" style="margin-top: 20px; display: none;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <div style="text-align: center;">
+      <img src="D:\my details\portfolio\Screenshot 2025-07-10 215308.png" alt="Pie Chart - Category of Deaths" style="max-width: 300px; border-radius: 12px; box-shadow: 0 0 20px #00abf0;">
+      <p>Shows distribution of deaths in 2020 by median age, aged 65+, and aged 70+.</p>
+    </div>
+    <div style="text-align: center;">
+      <img src="D:\my details\portfolio\Screenshot 2025-07-10 215320.png" alt="Pie Chart - New Cases vs Deaths" style="max-width: 300px; border-radius: 12px; box-shadow: 0 0 20px #00abf0;">
+      <p>Pie chart comparing new COVID-19 cases vs new deaths in 2020.</p>
+    </div>
+    <div style="text-align: center;">
+      <img src="D:\my details\portfolio\Screenshot 2025-07-10 215334.png" alt="Monthly COVID Cases" style="max-width: 300px; border-radius: 12px; box-shadow: 0 0 20px #00abf0;">
+      <p>Bar chart showing monthly new COVID-19 cases — August and September are peak.</p>
+    </div>
+    <div style="text-align: center;">
+      <img src="D:\my details\portfolio\Screenshot 2025-07-10 215413.png" alt="Year vs New Cases - 1" style="max-width: 300px; border-radius: 12px; box-shadow: 0 0 20px #00abf0;">
+      <p>Bar chart illustrating yearly trend of new COVID-19 cases (Version 1).</p>
+    </div>
+    <div style="text-align: center;">
+      <img src="D:\my details\portfolio\Screenshot 2025-07-10 215423.png" alt="Year vs New Cases - 2" style="max-width: 300px; border-radius: 12px; box-shadow: 0 0 20px #00abf0;">
+      <p>Bar chart comparing COVID cases from 2020–2024.</p>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
 
   <section id="certifications-internships">
     <h2>Certifications and Internships</h2>
@@ -309,7 +348,16 @@ html {
   </section>
 
   <footer>
-  <p style="text-align: center;">&copy; 2025 <span class="glow-name">Amuthanilavan</span>. All rights reserved.</p>
+ 
+  <section id="contact">
+  <h2>Contact</h2>
+  <p><strong>📞 Phone:</strong> 9597123313</p>
+  <p><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/amutha-nilavan-18baa224a/" target="_blank" style="color:#00ffea; text-decoration:none;">amutha-nilavan</a></p>
+  <p><strong>📧 Email:</strong> <a href="mailto:amuthanilavan395@gmail.com" style="color:#00ffea; text-decoration:none;">amuthanilavan395@gmail.com</a></p>
+  
+</section>
+
+  <p style="text-align: center; color: #ccc; margin-top: 20px;">&copy; 2025 <span class="glow-name">Amuthanilavan</span>. All rights reserved.</p>
 </footer>
 
   <script>
@@ -337,6 +385,10 @@ html {
         setTimeout(type, 120);
       }
     })();
-  </script>
+  function showProjectImage() {
+  const box = document.getElementById('project-image-box');
+  box.style.display = box.style.display === 'none' ? 'block' : 'none';
+}
+</script>
 </body>
 </html>
